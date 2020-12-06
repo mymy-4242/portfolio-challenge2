@@ -44,7 +44,7 @@ header nav {
     margin: 7px 0;
 }
 
-header nav ul {
+header nav ul, .contact-info ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -52,15 +52,18 @@ header nav ul {
     list-style: none;
 }
 
-header nav ul li a {
-    padding: 10px 15px;
-    font-weight: lighter;
+header nav ul li a, .contact-info ul li a {
+    padding: 5px 5px;
     font-size: 2vw;
-    color: var(--secondary-color);
-    background: none;
-    text-shadow: 0 0 5px rgb(32, 30, 30, 0.5);
-    border-bottom: 3px solid var(--secondary-color);
     margin: 5px;
+}
+
+header nav ul li a {
+    font-weight: lighter;
+    text-shadow: 0 0 5px rgb(32, 30, 30, 0.5);
+    color: var(--secondary-color);
+    border-bottom: 3px solid var(--secondary-color);
+    background: none;
 }
 
 /*hero*/
@@ -96,4 +99,40 @@ header nav ul li a {
     opacity: 1;
     font-size: 36px;
     flex: 5 70%;
+}
+
+.section-title {
+    display: block;
+    font-size: 36px;
+    width: 5em;
+    border-right: 3px solid var(--main-color);
+    padding: 10px;
+    margin: 30px;
+    text-align: right;
+    writing-mode: horizontal-tb;
+}
+
+/*contact*/
+.contact {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.contact-info {
+    margin: 7px 0px;
+    color: var(--main-color);
+}
+
+.contact-info ul li a {
+    font-weight: bold;
+    color: var(--main-color);
+    text-decoration: none;
+    border-bottom: 3px solid var(--main-color);
+    position: relative;
+}
+
+
+.flew-row {
+    display: flex;
 }
