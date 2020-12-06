@@ -37,8 +37,7 @@ header a {
     text-decoration: none;
     color: var(--main-color);
     background: var(--secondary-color);
-    padding: 10px 10px 10px 50px;
-    align-items: flex-end;
+    padding: 5px;
 }
 
 header nav {
@@ -62,4 +61,39 @@ header nav ul li a {
     text-shadow: 0 0 5px rgb(32, 30, 30, 0.5);
     border-bottom: 3px solid var(--secondary-color);
     margin: 5px;
+}
+
+/*hero*/
+.hero {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    width: 100%;
+    padding: 10px 20px;
+    opacity: 0.5;
+}
+
+.portfolio-image {
+    display: flex;
+    justify-content: flex-start;
+    flex: 1 30%;
+    margin: 40px 40px;
+    position: relative;
+}
+
+.portfolio-image img {
+    max-width: 30%;
+}
+
+.welcome {
+    display: flex;
+    justify-content: flex-end;
+    line-height: 2;
+    color: var(--tertiary-color);
+    opacity: 1;
+    font-size: 36px;
+    flex: 5 70%;
 }
