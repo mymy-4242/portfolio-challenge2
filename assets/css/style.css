@@ -44,7 +44,7 @@ header nav {
     margin: 7px 0;
 }
 
-header nav ul, .contact-info ul {
+header nav ul {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
@@ -52,7 +52,7 @@ header nav ul, .contact-info ul {
     list-style: none;
 }
 
-header nav ul li a, .contact-info ul li a {
+header nav ul li a {
     padding: 5px 5px;
     font-size: 2vw;
     margin: 5px;
@@ -121,8 +121,10 @@ header nav ul li a {
     flex: 2 80%;
     align-items: center;
     border-left: 3px solid var(--main-color);
-    padding-left: 20px;
+    padding: 0 20px;
     line-height: 1.5;
+    justify-content: space-around;
+    font-size: 18px;
 }
 
 /*work grid*/
@@ -136,15 +138,19 @@ header nav ul li a {
   }
 
 /*contact*/
-.contact {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-}
 
 .contact-info {
-    margin: 7px 0px;
+    margin: 7px auto;
     color: var(--main-color);
+}
+
+.contact-info ul {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    list-style: none;
+    line-height: 5em;
 }
 
 .contact-info ul li a {
@@ -152,9 +158,10 @@ header nav ul li a {
     color: var(--main-color);
     text-decoration: none;
     border-bottom: 3px solid var(--main-color);
-    position: relative;
+    font-size: 1.55vw;
+    padding: 5px;
+    margin: 0 20px;
 }
-
 
 .flew-row {
     display: flex;
