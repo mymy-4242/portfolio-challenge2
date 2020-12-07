@@ -133,14 +133,54 @@ header nav ul li a {
 }
 
 /*work grid*/
-.grid-container {
+.work-grid-wrapper {
+    display: flex;
+    width: 100%;
+}
+.work-grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    grid-template-rows: repeat(3, 1fr);
+    grid-template-columns: repeat(3, 20vw);
+    grid-template-rows: repeat(3, 12vw);
     grid-auto-flow: dense;
     width: 100%;
-    grid-gap: 30px;
-  }
+    height: 100%;
+    gap: 5px;
+    padding: 10px;
+}
+
+.item-1 {
+    grid-column: 1/span 2;
+    grid-row: 1/span 2;
+    background-image: url("../images/surf-report.jpg");
+    background-size: cover;
+}
+
+.item-2 {
+    grid-column: 2/span 1;
+    grid-row: 3/span 1;
+    background-image: url("../images/run-buddy-img.png");
+    background-size: cover;
+}
+
+.item-3 {
+    background-image: url("../images/LED-wall.jpg");
+    background-size: cover;
+}
+
+.item-4 {
+    background-image: url("../images/calculator.jpg");
+    background-size: cover;
+}
+
+.item-5 {
+    background-image: url("../images/pastel-puzzle.jpg");
+    background-size: cover;
+}
+
+.grid-item img {
+    max-width: 100%;
+    height: auto;
+}
 
 /*contact*/
 
