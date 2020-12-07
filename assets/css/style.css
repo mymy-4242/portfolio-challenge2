@@ -8,6 +8,7 @@
     --main-color: rgb(82, 3, 82);
     --secondary-color: rgb(194, 214, 247);
     --tertiary-color: rgb(51, 50, 50);
+    --border-color: rgb(181, 191, 245);
 }
 
 /*body*/
@@ -116,10 +117,6 @@ header nav ul li a {
     text-align: right;
 }
 
-.section h2:last-child {
-    text-align: right;
-}
-
 .section-content {
     display: flex;
     flex-wrap: wrap;
@@ -137,15 +134,20 @@ header nav ul li a {
     display: flex;
     width: 100%;
 }
+
 .work-grid-container {
     display: grid;
-    grid-template-columns: repeat(3, 20vw);
+    grid-template-columns: repeat(3, 33%);
     grid-template-rows: repeat(3, 12vw);
     grid-auto-flow: dense;
     width: 100%;
-    height: 100%;
-    gap: 5px;
+    gap: 7px;
     padding: 10px;
+}
+
+.grid-item {
+    border: solid 3px var(--border-color);
+    position: relative;
 }
 
 .item-1 {
@@ -180,6 +182,26 @@ header nav ul li a {
 .grid-item img {
     max-width: 100%;
     height: auto;
+}
+
+.grid-item .grid-text {
+    background: var(--border-color);
+    position: absolute;
+    left: 0;
+    bottom: 10px;
+    padding: 5px;
+}
+
+.grid-item a {
+    text-decoration: none;
+}
+
+.grid-item h3 {
+    font-size: 18px;
+}
+
+.grid-item p {
+    font-size: 14px;
 }
 
 /*contact*/
