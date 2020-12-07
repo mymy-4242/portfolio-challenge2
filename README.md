@@ -1,7 +1,7 @@
 # Portfolio
 Professional portfolio website with a link to the deployed website Run Buddy and placeholder images for future projects.
 
-![Screenshot](./assets/images/portfolio-screenshot.png)
+![Screenshot](./assets/images/Portfolio-screenshot.png)
 
 ## Files and Directories
 There is a gitignore file. The CSS file and images live in the assets folder.
